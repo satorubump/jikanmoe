@@ -153,7 +153,6 @@
 		D4139F98264550D1000930CF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D4139F9026452584000930CF /* ImageDownLoader.swift */,
 				D4139F8C2644F43D000930CF /* ConstantsTable.swift */,
 			);
 			path = Helpers;
@@ -174,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				D4139F842644C4B2000930CF /* SearchLisrViewModel.swift */,
+				D4139F9026452584000930CF /* ImageDownLoader.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

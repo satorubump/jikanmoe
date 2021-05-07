@@ -20,8 +20,9 @@ struct ConstantsTable {
     static let CaptionFont : CGFloat = 15.0
     static let SearchIconWidth : CGFloat = 50.0
     static let SearchIconHeight : CGFloat = 50.0
-    
-    static let SearchListViewTitle = "Anime List View"
+    static let TitleLengthLimit = 25
+    static let SearchListViewTitle = "Anime Search List View"
+    static let SearchFieldPlaceHolder = "Please type search key e.g. naruto"
     static let ImageSize : CGFloat = 100.0
     static let ImageAspectRacio : CGFloat = 0.88
 }

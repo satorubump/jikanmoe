@@ -31,6 +31,7 @@ struct SearchListView: View {
             //.edgesIgnoringSafeArea(.all)
             .navigationBarTitle(ConstantsTable.SearchListViewTitle, displayMode: .inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             self.viewModel.getAnimeList(title: title)
         }
@@ -50,9 +51,10 @@ private extension SearchListView {
                 .resizable()
                 .frame(width: ConstantsTable.SearchIconWidth, height: ConstantsTable.SearchIconHeight)
                 .aspectRatio(contentMode: .fit)
-            TextField("type Title", text: $title, onCommit: {
+            TextField(ConstantsTable.SearchFieldPlaceHolder, text: $title, onCommit: {
                 viewModel.getAnimeList(title: title)
             })
+            .keyboardType(.default)
             .font(.system(size: ConstantsTable.TitleFont))
             .autocapitalization(.none)
         }
@@ -68,7 +70,7 @@ private extension SearchListView {
                         HStack(alignment: .top) {
                             URLImage(url: anime.image_url)
                             VStack(alignment: .leading) {
-                                Text(anime.title.prefix(25))
+                                Text(anime.title.prefix(ConstantsTable.TitleLengthLimit))
                                     .font(.system(size: ConstantsTable.TitleFont))
                                     .foregroundColor(Color.black)
                                 Text(anime.type)
