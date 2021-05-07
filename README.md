@@ -31,7 +31,7 @@ Download Image and Update to UI
 
 ### Model
 - <b>AnimeSearchResponse.swift</b> -
-Anime download data from API
+Anime Download Data Model from API
 
 ### jikan.more API Connector
 - <b>SearchAnimeAPI.swift</b> -
