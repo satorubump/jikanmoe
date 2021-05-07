@@ -41,7 +41,7 @@ class SearchAnimeConnector : SearchAnimeConnectable {
         return publishConnector(components: urlComponents)
     }
     ///
-    /// Create the NYC Schools request url
+    /// Create the Search Anime request url
     ///
     /// - Parameters:
     ///   - paramA: Search Key - String
